@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Build .NET Project') {
             steps {
-                bat 'dotnet build --no-restore' // For Windows
+                bat 'dotnet build' // For Windows
             }
         }
         stage('Run Unit and Integration Tests') {
